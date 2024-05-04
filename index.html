@@ -7,6 +7,102 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="page">
+        <header>
+            <h1>Crie e compartilhe seu evento</h1>
+            <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
+        </header>
+        <form>
+            <fieldset>
+                <legend>Informações do Evento</legend>
+
+                <div class="input-wrapper">
+                    <label for="nome">Título do evento
+                        <span>(mínimo 8 caracteres)</span>
+                    </label>
+                    <input type="text" id="nome">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link-event">
+                        Link do evento
+                        <span>(começa com https://)</span>
+                    </label>
+                    <input type="text" id="link-event">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="whats">
+                        Whatsapp para contato 
+                        <span>(somente números)</span>
+                    </label>
+                    <input type="number" name="whatsapp" id="whats">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="info-extra">Informações extras</label>
+                    <textarea id="info-extra"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category">Categoria</label>
+                    <select id="category">
+                        <option value="live">Ao vivo</option>
+                        <option value="podcast">Podcast</option>
+                        <option value="mentor">Mentoria</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Privacidade</legend>
+                
+                <div class="input-wrapper">
+                    <label for="email">
+                        E-mail do administrador
+                        <span>(digite um email válido)</span>
+                    </label>
+                    <input type="email" name="" id="email">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="senha">
+                        Senha de acesso para participantes
+                        <span>(mínimo 8 caracteres)</span>
+                    </label>
+                    <input type="password" name="" id="senha">
+                </div>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="event-private" />
+                    <label for="event-private">Evento privado</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dia e hora</legend>
+                <div class="input-wrapper">
+                    <label for="date">Data</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="first-time">Das</label>
+                    <input type="time" id="date">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="last-time">Até</label>
+                    <input type="time" id="date">
+                </div>
+            </fieldset>
+        </form>
+
+        <footer>
+            <button type="button">
+                Salvar evento
+            </button>
+        </footer>
+    </div>
 </body>
 </html>
